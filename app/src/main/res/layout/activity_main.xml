@@ -1,0 +1,28 @@
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+    <FrameLayout android:id="@+id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        tools:context=".MainActivity"
+        tools:ignore="MergeRootFrame"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/listView">
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/listView"
+            android:id="@+id/list"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>
